@@ -1,11 +1,22 @@
 import React from 'react';
+import Banner from './../../components/Banner/Banner'
+import background from './../../assets/images/Image-source-1.jpg'
+import data from './../../data/logements.json'
+import Card from '../../components/Card/Card';
+import '../Home/homeStyle.css'
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home Page</h1>
-    </div>
-  );
-};
 
-export default Home;
+
+export default function HomePage() {
+
+  const caption = "Chez vous, partout et ailleurs"
+
+  return <>
+  <Banner background={background} caption={caption}/>
+  <section className="container-home">
+    {data.map(logement => {
+      return <Card logement={logement}></Card>
+    })}
+  </section>
+</>
+}

@@ -1,0 +1,24 @@
+footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+    gap: 30px;
+    color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+  }
+  @media (max-width: 769px) {
+    footer {
+      font-size: 12px;
+      gap: 15px;
+    }
+    footer p {
+      max-width: 140px;
+    }
+  }
