@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../Banner/bannerStyle.css'
+import '../styles/bannerStyle.css'
 
 
 export default function Banner({ background, caption }) {
