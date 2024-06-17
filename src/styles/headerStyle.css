@@ -3,7 +3,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin: 20px auto;
+    height: 50px;
+    max-width: 1240px;
+    width: calc(100% - 40px);
   }
   header svg {
     fill: #FF6060;
@@ -23,9 +26,7 @@ header {
     text-decoration: underline;
   }
   @media (max-width: 769px) {
-    header {
-      margin-top: 20px;
-    }
+
     header svg {
       width: 145px;
       height: 47px;
