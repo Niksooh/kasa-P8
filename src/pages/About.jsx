@@ -30,13 +30,13 @@ const arrayCollapse = [
 
 export default function About() {
     return (
-        <>
+        <div className='container'>
             <Banner background={background} />
             <div className='layout-collapse'>
                 {arrayCollapse.map(collapse => (
                     <Collapse key={collapse.id} label={collapse.label} content={collapse.content} />
                 ))}
             </div>
-        </>
+        </div>
     );
 }
