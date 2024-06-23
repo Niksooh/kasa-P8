@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import Housing from './pages/Housing';
+import housingData from "./data/logements.json"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/housing" element={<Housing />} />
+        <Route path='/housing/:id' element={<Housing data={housingData}/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

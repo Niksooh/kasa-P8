@@ -35,8 +35,14 @@ a {
 
 
 .main_container,
-.error_container{
+.container_error{
   max-width: 1240px;
   width: calc(100% - 40px);
   margin: 0 auto 50px;
+}
+@media (max-width: 769px) {
+  .main_container,
+  .container_container {
+    margin: 0 20px 30px;
+  }
 }
