@@ -9,7 +9,7 @@ const arrayCollapse = [
     {
         id: "Collapse 1",
         label: "Fiabilité",
-        content: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements et toutes les informations sont réguliérement vérifiées par nos équipes.",
+        content: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements et toutes les informations sont régulièrement vérifiées par nos équipes.",
     },
     {
         id: "Collapse 2",
@@ -19,7 +19,7 @@ const arrayCollapse = [
     {
         id: "Collapse 3",
         label: "Service",
-        content: "Nos équipes se tiennent à votre disposition pour fournir une expèrience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
+        content: "Nos équipes se tiennent à votre disposition pour fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
     },
     {
         id: "Collapse 4",
@@ -34,7 +34,9 @@ export default function About() {
             <Banner background={background} />
             <div className='layout-collapse'>
                 {arrayCollapse.map(collapse => (
-                    <Collapse key={collapse.id} label={collapse.label} content={collapse.content} />
+                    <div key={collapse.id} className='collapse-item'>
+                        <Collapse label={collapse.label} content={collapse.content} />
+                    </div>
                 ))}
             </div>
         </div>

@@ -22,7 +22,7 @@ return <>
 
     <div className=''>
         {housing.tags.map((value) =>(
-            <tags key={value} content={value} /> //Faire span ou faire composant
+            <span key={value} className="tag">{value}</span>
         ))}
     </div>
     </article>
@@ -37,5 +37,6 @@ return <>
     </article>
 
 </section>
+
 </>
 }
