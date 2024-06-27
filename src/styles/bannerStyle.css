@@ -6,7 +6,7 @@
   border-radius: 25px;
   margin-bottom: 50px;
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .banner-container {
     margin-bottom: 20px;
   }
@@ -18,7 +18,7 @@
   height: 223px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Box shadow applied to the image */
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .banner-container img {
     height: 111px;
     width: 90%;
@@ -39,8 +39,9 @@
   color: rgb(255, 255, 255);
   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0), 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .banner-container figcaption {
     font-size: 24px;
+    text-align: left;
   }
 }

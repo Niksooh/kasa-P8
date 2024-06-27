@@ -1,6 +1,3 @@
-.housing_rating {
-    display: inline-block;
-}
 
 .stars_container {
     display: inline-block;
@@ -13,16 +10,10 @@
     top: 0;
     left: 0;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 .stars_empty {
     display: inline-block;
+    fill : grey
 }
 
-.star_icon {
-    width: 25px;
-    height: 24px;
-    fill: #FFD700;
-    margin-right: 3px;
-}

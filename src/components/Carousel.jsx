@@ -46,17 +46,17 @@ export default function Carousel({ pictures, title }) {
     );
 }
 
-function NavigateCarousel({ leftClick, rightClick, index, picturesLength }) {
+ function NavigateCarousel({ leftClick, rightClick, index, picturesLength }) {
     return (
         <div className="carousel_navigate">
             <button className="btn_carousel_left" onClick={leftClick}>
-                <img src={arrowLeft} alt="Left Arrow" />
+                <img  className='img_arrow' src={arrowLeft} alt="Left Arrow" />
             </button>
             <span className="index_carousel">
                 {index} / {picturesLength}
             </span>
             <button className="btn_carousel_right" onClick={rightClick}>
-                <img src={arrowRight} alt="Right Arrow" />
+                <img className='img_arrow' src={arrowRight} alt="Right Arrow" />
             </button>
         </div>
     );

@@ -14,7 +14,7 @@ footer {
     text-align: center;
 
   }
-  @media (max-width: 769px) {
+  @media (max-width: 1024px) {
     footer {
       font-size: 12px;
       gap: 15px;

@@ -40,9 +40,9 @@ a {
   width: calc(100% - 40px);
   margin: 0 auto 50px;
 }
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .main_container,
-  .container_container {
+  .container_error {
     margin: 0 20px 30px;
   }
 }
