@@ -2,8 +2,18 @@
 .stars_container {
     display: inline-block;
     position: relative;
-    font-size: 0;
 }
+
+.stars{
+    width:25px;
+    height: 24px;
+}
+
+@media (max-width: 1024px) {
+    .stars{
+        width:16px;
+    }
+  }
 
 .stars_filled {
     position: absolute;
@@ -12,8 +22,5 @@
     white-space: nowrap;
 }
 
-.stars_empty {
-    display: inline-block;
-    fill : grey
-}
+
 

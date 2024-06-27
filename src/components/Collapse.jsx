@@ -2,8 +2,11 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
+
+
 export default function Collapse({ label, content }) {
     const [open, setOpen] = useState(false);
+
     return (
         <div className='collapse_container'>
             <h2 className="layout-collapse-2" onClick={() => setOpen(!open)}>
@@ -11,7 +14,9 @@ export default function Collapse({ label, content }) {
             </h2>
             {open && (
                 <div className="layout-content-collapse">
-                    <p>{content}</p>
+                    <div className='layout_housing'>
+                        <p>{content}</p>
+                    </div>
                 </div>
             )}
         </div>

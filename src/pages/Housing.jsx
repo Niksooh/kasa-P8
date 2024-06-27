@@ -37,10 +37,15 @@ export default function Housing({ data }) {
                     <Stars rating={housing.rating} />
                 </article>
             </section>
-
             <section className="housing_collapse">
-                <Collapse key={"Description"} id={"Description"} label={"Description"} content={housing.description} />
-                <Collapse key={"Equipements"} id={"Equipements"} label={"Equipements"} contentList={housing.equipments} />
+                <Collapse key="Description" id="Description" label="Description" content={housing.description} />
+                <Collapse key="Equipements" id="Equipements" label="Equipements" content={(
+                    <ul>
+                        {housing.equipments.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                )} />
             </section>
         </div>
     );
