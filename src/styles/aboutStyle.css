@@ -2,15 +2,10 @@
   min-height: calc(100vh - 210px - 50px - 20px);
 }
 
-.collapse_container{
-  width: 100%;
-}
-
 .layout-about {
   width: 65%;
   margin: auto;
 }
-
 
 .layout_housing p{
   display: flex;
