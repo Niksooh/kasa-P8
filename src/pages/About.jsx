@@ -32,9 +32,9 @@ export default function About() {
     return (
         <div className='container'>
             <Banner background={background} />
-            <div className='layout-collapse'>
+            <div className='layout-about'>
                 {arrayCollapse.map(collapse => (
-                    <div key={collapse.id} className='collapse-item'>
+                    <div key={collapse.id} className='about-item'>
                         <Collapse label={collapse.label} content={collapse.content} />
                     </div>
                 ))}
