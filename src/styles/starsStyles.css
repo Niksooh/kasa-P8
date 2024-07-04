@@ -2,7 +2,14 @@
 .stars_container {
     display: inline-block;
     position: relative;
+    margin-top: 20px
 }
+
+@media (max-width: 1024px) {
+    .stars_container{
+        margin-top: 0;
+    }
+  }
 
 .stars{
     width:25px;
