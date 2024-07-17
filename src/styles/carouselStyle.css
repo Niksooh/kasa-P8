@@ -43,7 +43,7 @@
 }
 
 .btn_carousel_left {
-  left: 5px;
+  left: 25px;
   top: 50%;
   background-color: transparent;
   transform: translateY(-50%);
@@ -51,7 +51,7 @@
 }
 
 .btn_carousel_right {
-  right: 5px;
+  right: 25px;
   top: 50%;
   background-color: transparent;
   transform: translateY(-50%);

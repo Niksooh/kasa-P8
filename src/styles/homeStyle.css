@@ -7,12 +7,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
+    padding-bottom: 30px;
 }
 
   @media (max-width: 1024px) {
     .container-home {
       grid-template-columns: 1fr 1fr;
+      background-color: white;
     }
   }
   @media (max-width: 1024px) {
@@ -40,7 +42,7 @@
       height: 255px;
     }
   }
-  
+
   .cards::after {
     content: "";
     position: absolute;
